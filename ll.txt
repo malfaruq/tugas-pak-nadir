@@ -1,0 +1,38 @@
+package belajar;
+// latihan method non void
+public class mobilku {
+    String warna;
+    int tahun_produksi;
+    int nomormesin;
+    int nomorrangka;
+    //method mengisi variabel instance
+    void isi (String warna, int tahun_produksi,int nomorrangka,int nomormesin){
+        this.warna = warna;
+        this.tahun_produksi = tahun_produksi;
+        this.nomormesin = nomormesin;
+        this.nomorrangka = nomorrangka;
+    }
+    //method isi variabel
+String ambil_warna (){
+    return warna;
+}
+int ambil_tahun_produksi (){
+    return tahun_produksi;
+}
+int ambil_nomor_mesin(){
+    return nomormesin;
+}
+int ambil_nomorrangaka(){
+    return nomorrangka;
+}
+public static void main(String[] args) {
+    mobilku mobilNiaga = new mobilku();
+    //proses pemanggilan method void
+    mobilNiaga.isi("hitam", 2015, 12345, 98765);
+    // tampilan
+    System.out.println("warna :" + mobilNiaga.ambil_warna());
+    System.out.println("tahun produksi :" + mobilNiaga.ambil_tahun_produksi());
+    System.out.println("nomor mesin :" + mobilNiaga.ambil_nomor_mesin());
+    System.out.println("nomor rangka :" + mobilNiaga.ambil_nomorrangaka());
+}
+}

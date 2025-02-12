@@ -1,0 +1,22 @@
+
+package belajar;
+    //latihan method static
+public class Mobilana {
+    //variabel static
+    static String Warna = "merah";
+    static int tahun_produksi = 2020;
+    //method static
+    static void ubah () { 
+        Warna = "biru" ;
+    }
+    static void tampil() {
+        System.out.println(Warna);
+        System.out.println(tahun_produksi);
+    }
+    public static void main(String[] args) {
+        //panggilan method static
+        Mobilana.ubah();
+        Mobilana.tampil();
+    }
+
+}

@@ -1,0 +1,29 @@
+
+package belajar;
+//latihan void method
+public class mobil {
+    String warna;
+    int tahunproduksi;
+    int nomor_mesin;
+    int nomor_rangka;
+    public static void main(String[] args) {
+        mobil mobilNiaga = new mobil();
+        //pemangilan method void
+        mobilNiaga.isi();
+        mobilNiaga.tampil();
+    }
+    //mengisi variabel instance
+    void isi(){
+        warna = "hitam";
+        tahunproduksi = 2015;
+        nomor_mesin = 12345;
+        nomor_rangka = 98765;
+    }
+    //menampilkan isi variabel
+    void tampil(){
+        System.out.println("warna:" + warna);
+        System.out.println("tahun produsi : " + tahunproduksi);
+        System.out.println("nomor mesin : " + nomor_mesin);
+        System.out.println("nomor rangka : " + nomor_rangka);
+    }
+}
